@@ -1,0 +1,327 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: lightgray; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #0077b5; /* LinkedIn blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Add this line to make it a reference point for the toggle button */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: whitesmoke; /* White text color */
+    padding: 1px 2px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase; /* Uppercase text for a premium feel */
+}
+
+header nav ul li a:hover {
+    background-color: #336a88; /* LinkedIn blue on hover */
+    color: #fff; /* White text on hover */
+    text-decoration: underline;
+    transition: text-decoration 0.3s, color 0.3s;
+}
+
+button#theme-toggle {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    position: absolute; /* Position it absolutely within the header */
+    right: 20px; /* Adjust this value to move it to the desired position */
+    top: 50%; /* Vertically center the button */
+    transform: translateY(-50%); /* Vertically center the button */
+}
+
+button#theme-toggle:hover {
+    color: #09c156; 
+}
+
+/* About section styles */
+#about {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555; /* Slightly darker text color */
+}
+/* Dark mode for the About section */
+body.dark-mode #about {
+    background-color: #1a1a1a; /* Dark background color for dark mode */
+    color: #fff; /* White text color for dark mode */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: #0077b5; /* LinkedIn blue */
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #00a0dc; /* Lighter blue on hover */
+}
+
+/* Portfolio section styles */
+#portfolio {
+    background-color: lightgray; /* Light gray background */
+    padding: 40px 0;
+}
+
+#portfolio h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #965151;
+    text-transform: uppercase; /* Uppercase text for a premium feel */
+}
+/* Dark mode for the Portfolio section */
+body.dark-mode #portfolio {
+    background-color: #333; /* Dark background color for dark mode */
+    color: #fff; /* White text color for dark mode */
+}
+
+.project {
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a premium look */
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Slight lift on hover for an interactive feel */
+}
+
+.project-image {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0; /* Rounded corners on the top */
+}
+
+.project h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #12bac088;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+}
+/* Dark mode for the Contact section */
+body.dark-mode #contact {
+    background-color: #1a1a1a; /* Dark background color for dark mode */
+    color: #fff; /* White text color for dark mode */
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #fff;
+    padding: 40px 0;
+    position: relative; /* Add this line for positioning */
+}
+
+.contact-icons {
+    position: absolute; /* Position the icons absolutely within the contact section */
+    bottom: 10px; /* Move the icons to the bottom */
+    right: 10px; /* Move the icons to the right */
+}
+
+.icon.contact-button {
+    font-size: 1.5rem;
+    margin-right: 10px; /* Add some spacing between the icons */
+    color: #0077b5; /* Icon color */
+    transition: color 0.3s;
+}
+
+.icon.contact-button:hover {
+    color: #00a0dc; /* Icon color on hover */
+}
+
+
+
+/* Dark mode for the Contact section */
+body.dark-mode #contact {
+    background-color: #1a1a1a; /* Dark background color for dark mode */
+    color: #fff; /* White text color for dark mode */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #0077b5;
+}
+
+button[type="submit"] {
+    background-color: #0077b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase; /* Uppercase text for a premium feel */
+}
+
+button[type="submit"]:hover {
+    background-color: #005f91; /* Slightly darker blue on hover */
+}
+
+#confirmation-message {
+    margin-top: 10px;
+    color: #09dcb5;
+    font-weight: bold;
+}
+
+/* Profile section styles */
+#profile {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.profile-image {
+    max-width: 100%;
+    border-radius: 50%; /* Make it a circle */
+    /* Add the following lines to control the image size and center it */
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+#profile p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Dark mode for the Profile section */
+body.dark-mode #profile {
+    background-color: #333; /* Dark background color for dark mode */
+    color: #fff; /* White text color for dark mode */
+}
+
+
+/* Dark mode for the Profile section */
+body.dark-mode #profile {
+    background-color: #333; /* Dark background color for dark mode */
+    color: #fff; /* White text color for dark mode */
+}
+
+/* Skills section styles */
+#skills {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+#skills h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase; /* Uppercase text for a premium feel */
+}
+
+/* Dark mode for the Skills section */
+body.dark-mode #skills {
+    background-color: #1a1a1a; /* Dark background color for dark mode */
+    color: #fff; /* White text color for dark mode */
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Update the dark mode styles */
+.dark-mode {
+    background-color: rgb(6, 59, 59); /* Dark background color for dark mode */
+    color: white; /* White text color for dark mode */
+}
+
+/* Add a class to the colorful icons */
+.icon.colorful {
+    color: #0077b5; /* LinkedIn blue for colorful icons */
+}
+
+/* Add a class for dark mode */
+.dark-mode .icon.colorful {
+    color: #c46608fa; /* Dark yellow for colorful icons in dark mode */
+}
